@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  --color-background: hsl(40 23% 95%);
+  --color-foreground: hsl(218 65% 14%);
+  --color-brand-navy: hsl(218 65% 14%);
+  --color-brand-navy-hover: hsl(219 59% 21%);
+  --color-brand-gold: hsl(44 53% 54%);
+  --color-brand-gold-soft: hsl(43 70% 70%);
+  --color-brand-burgundy: hsl(0 68% 32%);
+  --color-surface-base: hsl(40 23% 95%);
+  --color-surface-card: hsl(0 0% 100%);
+  --color-surface-muted: hsl(45 13% 87%);
+  --color-text-primary: hsl(218 65% 14%);
+  --color-text-muted: hsl(217 22% 63%);
+  --color-text-placeholder: hsl(40 8% 73%);
+  --color-text-subtle: hsl(40 6% 67%);
+  --color-text-neutral: hsl(0 0% 80%);
+  --color-state-error: hsl(6 63% 47%);
+  --color-state-success: hsl(157 46% 34%);
+  --color-state-error-bg: hsl(0 86% 97%);
+  --color-state-error-border: hsl(0 93% 94%);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+
+  --effect-glow-red: radial-gradient(circle, hsl(0 71% 41% / 0.3) 0%, transparent 70%);
+  --effect-focus-ring: 0 0 0 3px hsl(218 65% 14% / 0.07);
+  --effect-card-shadow: 0 4px 24px hsl(218 65% 14% / 0.08);
+  --effect-button-shadow: 0 4px 20px hsl(218 65% 14% / 0.25);
+  --effect-button-shadow-hover: 0 8px 28px hsl(218 65% 14% / 0.3);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
 }
