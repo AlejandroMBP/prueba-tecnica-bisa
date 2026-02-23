@@ -33,6 +33,18 @@ export default function Home() {
 
         <div className="absolute top-0 left-0 right-0 h-0.75 bg-linear-to-r from-brand-gold via-brand-gold-soft to-brand-gold" />
 
+        <div className="absolute inset-0 pointer-events-none">
+          <Image
+            src="/images/bg_banner_financiacion_2025.webp"
+            alt=""
+            fill
+            priority
+            aria-hidden="true"
+            className="object-cover object-left opacity-60"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-brand-navy/30 via-brand-navy/55 to-brand-navy/80" />
+        </div>
+
         <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-(--effect-glow-red)" />
 
         {/* Circulos decorativos */}
@@ -51,17 +63,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative z-10">
-          <span className="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-brand-gold mb-5">
+        <div className="relative z-10 max-w-136">
+          <span className="inline-block text-[11px] font-semibold tracking-[0.14em] uppercase text-brand-gold mb-4">
             Hackathon Virtual
           </span>
-          <h2 className="font-serif text-[40px] leading-[1.18] text-white mb-4">
+          <h2 className="font-serif text-[38px] leading-[1.15] text-white mb-4 text-balance">
             Resuelve retos{" "}
             <em className="italic text-brand-gold-soft">reales</em>{" "}
             del sector financiero
           </h2>
-          <p className="text-sm leading-[1.75] text-white/80 max-w-72">
+          <p className="text-sm leading-[1.75] text-white/85 max-w-120">
             Una iniciativa de Banco BISA y la Universidad del Rosario para impulsar soluciones con impacto real.
+          </p>
+          <p className="mt-3 text-[17px] leading-[1.6] font-medium text-brand-gold-soft max-w-104">
+            ¡Te acompañamos hasta donde quieras llegar!
           </p>
         </div>
 
@@ -82,7 +97,7 @@ export default function Home() {
           <p className="text-[11px] font-medium tracking-[0.15em] uppercase text-brand-gold mb-2.5">
             Acceso al evento
           </p>
-          <p className="text-[13px] text-text-muted leading-[1.5] mb-1.5">
+          <p className="text-[13px] text-text-muted leading-normal mb-1.5">
             Bienvenido
           </p>
           <h1 className="font-serif text-xl text-text-primary leading-[1.2] mb-8">

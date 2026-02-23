@@ -160,7 +160,7 @@ export default function InscripcionPage() {
 
                 <Field label="N° Celular" id="celular" required error={touched.celular ? errors.celular : undefined}>
                   <Input id="celular" type="tel" value={form.celular} onChange={handleChange("celular")} onBlur={handleBlur("celular")}
-                    placeholder="+591 7XXXXXXX" autoComplete="tel" error={touched.celular ? errors.celular : undefined} />
+                    placeholder="7XXXXXXX" autoComplete="tel" error={touched.celular ? errors.celular : undefined} />
                 </Field>
 
                 <div className="col-span-2 max-sm:col-span-1">
